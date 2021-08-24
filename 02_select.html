@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Html select</title>
+  </head>
+  <body>
+    <header>
+      <h1>Titel</h1>
+    </header>
+    <main>
+      <h2>Undertitel</h2>
+      <section>
+        <article>
+          <img src="img/img.jpg" alt="første billede" />
+          <h3>Article 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sed
+            consectetur illum vel similique, quidem voluptatibus doloribus
+            explicabo fugit necessitatibus tempora. Eligendi nostrum tenetur nam
+            in excepturi, aut soluta rem?
+          </p>
+        </article>
+
+        <article>
+          <img src="img/img1.jpg" alt="andet billede" />
+          <h3>Article 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sed
+            consectetur illum vel similique, quidem voluptatibus doloribus
+            explicabo fugit necessitatibus tempora. Eligendi nostrum tenetur nam
+            in excepturi, aut soluta rem?
+          </p>
+        </article>
+      </section>
+      <footer>
+        <p>This is the footer</p>
+      </footer>
+
+      <script>
+        const titel = document.querySelector("header h1");
+        console.log(titel);
+        titel.textContent = "Overskrift";
+
+        const h2 = document.querySelector("h2");
+        console.log(h2);
+
+        const artikel1 = document.querySelector("article:nth-child(1)");
+
+        const artikel2 = document.querySelector("article:nth-child(2)");
+
+        const billede1 = document.querySelector("img:nth-child(1)");
+
+        billede1.src = "img/hest.jpg";
+
+        console.log(billede1);
+
+        const billede2 = document.querySelector("article:nth-child(2) img");
+
+        const h3_a1 = document.querySelector("article:first-child h3");
+        console.log(h3_a1);
+        h3_a1.textContent = "Overskrift artikel 1";
+
+        const h3_a2 = document.querySelector("article:nth-child(2) h3");
+        console.log(h3_a2);
+        h3_a2.textContent = "Overskrift artikel 2";
+
+        const p_a1 = document.querySelector("article:nth-child(1) p");
+        console.log(p_a1);
+        p_a1.textContent = "Ny tekst i denne artikel";
+
+        const p_a2 = document.querySelector("article:nth-child(2) p");
+        console.log(p_a2);
+        p_a2.textContent = "Og ligeledes i denne artikel";
+
+        console.log(billede2);
+
+        console.log(artikel1);
+
+        console.log(artikel2);
+
+        const foot = document.querySelector("footer");
+        console.log(foot);
+      </script>
+    </main>
+  </body>
+</html>

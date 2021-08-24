@@ -1,5 +1,6 @@
 img {
-  max-width: 500px;
+  background-size: cover;
+  max-width: 100%;
 }
 header {
   text-align: center;
@@ -8,7 +9,7 @@ header {
   padding-bottom: 10px;
 }
 
-#article1 {
+article {
   border: 2px solid black;
   padding-right: 0px;
   margin-bottom: 2rem;
@@ -16,10 +17,8 @@ header {
   padding-left: 1px;
 }
 
-#article2 {
-  border: 2px solid black;
-  max-width: 500px;
-  padding-left: 1px;
+h1 {
+  text-align: center;
 }
 
 p {
@@ -42,5 +41,13 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
   }
 }
