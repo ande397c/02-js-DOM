@@ -1,0 +1,46 @@
+img {
+  max-width: 500px;
+}
+header {
+  text-align: center;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#article1 {
+  border: 2px solid black;
+  padding-right: 0px;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  padding-left: 1px;
+}
+
+#article2 {
+  border: 2px solid black;
+  max-width: 500px;
+  padding-left: 1px;
+}
+
+p {
+  max-width: 75ch;
+}
+
+footer {
+  text-align: center;
+  border: 2px solid black;
+
+  margin-top: 1rem;
+}
+
+section {
+  margin-left: 15%;
+}
+
+@media (min-width: 1200px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+}
