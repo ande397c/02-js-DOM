@@ -14,6 +14,8 @@ article {
   margin-bottom: 2rem;
 
   padding-left: 1px;
+
+  transition: ease-out 0.5s;
 }
 
 h1 {
@@ -52,4 +54,8 @@ section {
 
 .cursor {
   cursor: pointer;
+}
+
+.shadow {
+  box-shadow: -3px -3px 20px 8px rgba(0, 0, 0, 0.63);
 }
