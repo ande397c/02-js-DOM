@@ -46,11 +46,14 @@
         function start() {
           console.log("jeg er loaded");
           billede1.addEventListener("click", replaceImg);
+          billede1.classList.add("cursor");
         }
 
         function replaceImg() {
           console.log("replaceImg");
-          billede1.src = "img/img.jpg";
+          let tal = Math.round(Math.random() * 10);
+          billede1.src = "https://placeimg.com/400/300/arch?t=" + tal;
+          // billede1.src = "img/img.jpg";
         }
 
         //Header + h2 + h3

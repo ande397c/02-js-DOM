@@ -1,5 +1,4 @@
 img {
-  background-size: cover;
   max-width: 100%;
 }
 header {
@@ -13,7 +12,7 @@ article {
   border: 2px solid black;
   padding-right: 0px;
   margin-bottom: 2rem;
-  max-width: 500px;
+
   padding-left: 1px;
 }
 
@@ -22,7 +21,6 @@ h1 {
 }
 
 p {
-  max-width: 75ch;
 }
 
 footer {
@@ -50,4 +48,8 @@ section {
   footer {
     text-align: center;
   }
+}
+
+.cursor {
+  cursor: pointer;
 }
